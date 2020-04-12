@@ -64,7 +64,7 @@ function finalResult() {
 		result2.innerHTML += arr[p] + "<br>";
 	}
 }
-mean.onclick = function(){
+mean.addEventListener("click", function(){
 	display.innerHTML = `Hi ${name.value.toUpperCase()}<br>Here is the Hidden Meaning in Your Name`;
 	displayBox.style.display = "flex";
 	check();
@@ -73,8 +73,8 @@ mean.onclick = function(){
 	mean.style.display = "none";
 	thank.style.display = "block";
 	console.log(arr);
-};
-reset.onclick = function() {
+});
+reset.addEventListener("click", function() {
 	arr = [];
 	name.innerHTML = "";
 	result1.innerHTML = "";
@@ -85,4 +85,4 @@ reset.onclick = function() {
 	display.innerHTML = `Hey Beautiful<br><br>Let's Find out<br> The Hidden Meaning In Your Name`;
 	thank.style.display = "none";
 	name.focus();
-};
+});
