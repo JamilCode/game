@@ -1,4 +1,3 @@
-"use strict";
 let display = document.getElementsByTagName("h1")[0];
 let result1 = document.getElementsByTagName("p")[0];
 let result2 = document.getElementsByTagName("p")[1];
