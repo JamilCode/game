@@ -72,7 +72,6 @@ mean.addEventListener("click", function(){
 	reset.style.display = "inline";
 	mean.style.display = "none";
 	thank.style.display = "block";
-	console.log(arr);
 });
 reset.addEventListener("click", function() {
 	arr = [];
