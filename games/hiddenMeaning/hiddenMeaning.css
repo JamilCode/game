@@ -1,0 +1,52 @@
+#display {
+	font-size: 20px;
+}
+main {
+	text-align: center;
+	line-height: 1.8;
+	
+}
+#container {
+	display: flex;
+	width: 500px;
+	margin: 5px auto;
+	border: 2px solid white;
+}
+#container div {
+	width: 50%;
+	margin: 10px;
+}
+button {
+	text-align: center;
+	width: 150px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: none;
+	font-family: 'Cinzel', serif;
+}
+button:hover {
+	background-color: black;
+	color: white;
+}
+input {
+	text-align: center;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: none;
+	font-family: 'Cinzel', serif;
+}
+#thank {
+	border: 2px solid white;
+	margin: 5px auto;
+	padding: 10px;
+	font-size: 36px;
+	background-color: slategray;
+	font-family: 'Tangerine', cursive;
+}
+@media screen and (max-width: 480px) {
+	#container {
+		width: auto;
+	}
+}

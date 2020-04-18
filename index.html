@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lan="en-US">
 <head>
-	<title>Jamil Ahmed</title>
+	<title>Game Zone</title>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="author" content="jamil Ahmed"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-	<h1>Hey Beautiful<br><br>Let's Find out<br> The Hidden Meaning In Your Name</h1>
-	<form>
-		<input type = "text" placeholder = "Your Nick Name" autofocus/>
-		<button type = "button">Meaning</button>
-		<button type = "reset">Reset</button>
-	</form>
-	<div id = "container">
-		<div><p style = "text-align: center;"></p></div>
-		<div><p></p></div>
+	<header>
+		<div id = "logo">
+			<img src = "pictures/jamil.jpeg"/>
+		</div>
+		<div id = "title">
+			<h1>Game Zone</h1>
+			<p>A place for Gamers</p>
+		</div>
+	</header>
+	<nav>
+		<ul id = "main-nav">
+			<li><a href = "index.html">Home</a></li>
+			<li><a href = "pages/about.html">About</a></li>
+			<li><a href = "pages/contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+	<div class = "game-card">
+		<a href = "games/hiddenMeaning/hiddenMeaning.html">
+		<img src = "games/hiddenMeaning/hiddenMeaning.png"/>
+		<p class = "card-des">Enter your name and find out the hidden meaning in your name</p>
+		</a>
 	</div>
-	<div id = "thank">
-		<img src = "jamil.jpeg"/><br>
-		<h2>Thank You For Visiting</h2>
-	</div>
-	<script src="script.js"></script>
+	</main>
 </body>
 </html>

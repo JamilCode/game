@@ -1,64 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Quattrocento+Sans:ital@1&family=Tangerine:wght@700&display=swap');
 body {
 	background-color: dodgerblue;
-	color: white;
-	text-align: center;
 	font-family: 'Quattrocento Sans', sans-serif;
 }
-h1 {
-	font-size: 20px;
-}
-p {
-	text-align: left;
-	line-height: 1.8;
-	
-}
-#container {
+/* style the header */
+header {
 	display: flex;
-	width: 500px;
-	margin: 5px auto;
-	border: 2px solid white;
-}
-#container div {
-	width: 50%;
-	margin: 10px;
-}
-button {
+	background-color: darkslategray;
 	text-align: center;
-	width: 150px;
-	height: 40px;
-	font-size: 20px;
-	border-radius: 10px;
-	border: none;
-	font-family: 'Cinzel', serif;
-}
-button:hover {
-	background-color: black;
 	color: white;
 }
-input {
-	text-align: center;
-	height: 40px;
-	font-size: 20px;
-	border-radius: 10px;
-	border: none;
-	font-family: 'Cinzel', serif;
-}
-img {
-	width: 100px;
-	height: 100px;
+#logo img {
 	border-radius: 50%;
+	width: 10vw;
+	height: 10vw;
+	padding: 1vw;
 }
-#thank {
-	border: 2px solid white;
-	margin: 5px auto;
-	padding: 10px;
-	font-size: 36px;
-	background-color: slategray;
-	font-family: 'Tangerine', cursive;
+#title {
+	width: 100%;
 }
-@media screen and (max-width: 480px) {
-	#container {
-		width: auto;
+#title h1 {
+	font-size: 4vw;
+	margin: 0.5vw;
+}
+#title p {
+	margin: 0;
+	font-size: 2vw;
+	word-spacing: 2vw;
+	letter-spacing: 1vw;
+}
+/* style the header */
+/* Style the navigation */
+#main-nav {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+nav {
+	background-color: red;
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	border-right: 2px solid white;
+}
+nav a {
+	padding: 1vw;
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 2vw;
+}
+nav a:hover {
+	background-color: black;
+}
+/* Style the navigation */
+/* Style for game Cards */
+.game-card {
+	width: 20vw;
+	margin: 1vw 0;
+	background-color: powderblue;
+}
+.game-card img {
+	width: 20vw;
+	height: auto;
+}
+.game-card a {
+	text-decoration: none;
+	display: block;
+}
+.card-des {
+	margin: 0;
+	text-align: center;
+	padding: 0.5vw;
+	font-size: 1.5vw;
+	background-color: darkslategray;
+	color: white;
+}
+/* Style for game Cards */
+/* style for mobile */
+@media screen and (max-width: 480px) { 
+	body {
+		margin: 0;
 	}
+	/*Style the header*/
+	#logo img {
+		width: 20vw;
+		height: 20vw;
+	}
+	#title h1 {
+		margin: 1vw 0 0 0
+		letter-spacing: 0.15em;
+		font-size: 11vw;
+	}
+	#title p {
+		margin: 3px;
+		letter-spacing: 0.313em;
+		word-spacing: 2px;
+		font-size: 4.5vw;
+	}
+	/*Style the header*/
+	/* style navigation */
+	nav a {
+		font-size: 6.5vw;
+	}
+	/* style navigation */
+	/* style game card */
+	.game-card {
+		width: 80vw;
+		margin: 0.5vw auto;
+		border: 2px solid white;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+	.game-card img {
+		margin-left: 50%;
+		transform: translate(-50%, 0);
+		width: 50vw;
+		height: 50vw;
+	}
+	.card-des {
+		font-size: 6.5vw;
+	}
+	/* style game card */
 }
+/* Style for mobile */
